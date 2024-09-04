@@ -1,0 +1,108 @@
+body {
+  margin:5% 5% 5% 5%;
+  background-color: #ed7845;
+    animation-duration: 1.6s;
+    animation-name: slidein;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 30%;
+    width: 60%;
+  }
+
+  to {
+    margin:5% 5% 5% 5%;
+    width: 90%;
+  }
+}
+
+
+.flex-parent-element {
+  display: flex;
+  width: 85%;
+  
+}
+
+@keyframes oppa {
+  from{
+    opacity: 0%;
+  } 
+  to{
+    flex: 1;
+    opacity: 100%;
+    margin: 10px;
+  padding: 50px;
+  } 
+}
+
+.flex-child-element {
+  flex: 1;
+  margin: 10px;
+  padding: 50px;
+  animation-duration: 1.3s;
+  animation-fill-mode: backwards;
+    animation-delay: 1s;
+    animation-name: oppa;
+    animation-timing-function: ease-in-out;
+}
+
+.flex-child-element:first-child {
+  margin-right: 10px;
+  
+}
+
+@media (max-width: 700px) { 
+  body {
+    font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    margin:5% 5% 5% 5%;
+    background-color: #202124;
+      animation-duration: 1.6s;
+      animation-name: slidein;
+      animation-fill-mode:both;
+      animation-delay: 1s;
+      animation-timing-function: ease;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 30%;
+      width: 100%;
+    }
+  
+    to {
+      margin:5% 5% 5% 10%;
+      width: 0%;
+      
+    }
+  }
+  
+  
+  .flex-parent-element {
+    display:flex;
+    width: 100%;
+    
+  }
+  
+  
+  .flex-child-element {
+    flex:3;
+    margin:   60px;
+    padding: 0px;
+    border: 0;
+    
+  }
+  
+  .flex-child-element:first-child {
+    margin-right: 0px;
+    
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+/* Table */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #124e66;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+/* Table header */
+.custom-table thead th {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+/* Table body */
+.custom-table tbody tr:nth-child(even) {
+    background-color: gray;
+}
+
+/* Table cells */
+.custom-table td {
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* Checkbox column */
+.custom-table td input[type="checkbox"] {
+    margin: 0;
+}
+
+
+.container {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 80%;
+}
+
+
+    body {
+        font-family: "Poppins";
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        
+        margin-bottom: 0px;
+        font-weight: 700;
+    }
+    #data-table {
+      display: none;
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    #data-table th, #data-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+    #data-table th {
+        background-color: grey;
+    }
+    #data-table tbody tr:nth-child(even) {
+        background-color: darkslategray;
+    }
+    .custom-btn{
+        background-color: gray;
+        padding: 10px;
+        color: white;
+    }
+    body {
+  margin:5% 5% 5% 5%;
+  padding: 10px 100px 10px 100px;
+    }
+</style> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  
+  <title>JS Auth</title>
+</head>
+<body style="background-color: #202124; color: white;">
+
+  <br><br>
+  <div class="container">
+
+    <div class="text" style="float: left;">
+      <h1 id="abc"></h1>
+    </div>
+    <div class="image">
+      <img id="us" style="max-width: 200px;">
+    </div>
+    
+  </div>
+  <br>
+
+  
+    <button id="viewDataBtn" class="btn btn-primary btn-block mb-4" style="background-color:#124e66 !important" >View Data</button>
+    <div id="data-container">
+      <p></p>
+    <table id="data-table">
+      <thead>
+          <tr>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Status</th>
+          </tr>
+      </thead>
+      <tbody id="data-body"></tbody>
+  </table>
+</div>
+<br>
+  <button type="submit" class="btn btn-primary btn-block mb-4" id="signout" style="background-color:#124e66 !important">Sign Out</button>
+ </div>
+ 
+
+   <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+   <script src="app1.js"></script>
+</body>
+</html>
