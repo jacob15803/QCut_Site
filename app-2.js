@@ -1,5 +1,5 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyAcaysXohOtStvve1nJ-lfPvnYKrbWoc3M",
+  apiKey: "",
   authDomain: "nggallery-dc68c.firebaseapp.com",
   databaseURL: "https://nggallery-dc68c.firebaseio.com",
   projectId: "nggallery-dc68c",
