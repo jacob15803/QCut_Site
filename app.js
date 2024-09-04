@@ -1,6 +1,6 @@
 
   var  firebaseConfig = {
-    apiKey: "AIzaSyC3S50eHZY76Gr7mpA0gCs_I5JWYBmYs0Y",
+    apiKey: "",
     authDomain: "qcut-60cec.firebaseapp.com",
     projectId: "qcut-60cec",
     storageBucket: "qcut-60cec.appspot.com",
